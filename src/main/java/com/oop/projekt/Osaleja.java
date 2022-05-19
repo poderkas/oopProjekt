@@ -1,6 +1,6 @@
-package com.oop.projekt2;
+package com.oop.projekt;
 
-public class Osaleja {
+public class Osaleja extends VihkameTreeview{
     //osaleb töötoas
     private String nimi;
     //private List<Töötuba> tööToad;
@@ -20,10 +20,7 @@ public class Osaleja {
 
     @Override
     public String toString() {
-        return "Osaleja{" +
-                "nimi='" + nimi + '\'' +
-                //", osalenTöötoas=" + tööToad +
-                '}';
+        return "Osaleja: "+nimi;
     }
     //public void kuvaEkraanile() {System.out.println(tööToad);}
 }

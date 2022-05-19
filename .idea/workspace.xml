@@ -4,18 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd8d7be7-1f47-4f90-8afb-4874398b954f" name="Changes" comment="">
+    <list default="true" id="fd8d7be7-1f47-4f90-8afb-4874398b954f" name="Changes" comment="Kole aga töötab.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/VihkameTreeview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Osaleja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Osaleja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Peaklass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Peaklass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Töötuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Töötuba.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/oop/projekt/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/oop/projekt/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29MAZFnVVzuMkYZQePnZvkdjSNc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,9 +42,50 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kaspar\IdeaProjects\projekt\src\main\java\com\oop\projekt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Peaklass">
+    <configuration name="Peaklass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oop.projekt.Peaklass" />
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oop.projekt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gruppDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.oop.projekt.gruppDemo" />
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oop.projekt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Peaklass" />
+        <item itemvalue="Application.gruppDemo" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,5 +107,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kole aga töötab." />
+    <option name="LAST_COMMIT_MESSAGE" value="Kole aga töötab." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

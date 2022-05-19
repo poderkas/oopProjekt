@@ -1,10 +1,10 @@
-package com.oop.projekt2;
+package com.oop.projekt;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Töötuba {
+public class Töötuba extends VihkameTreeview{
 
     //lisab osaleja
     //väljastab osaleja(d) ekraanile
@@ -15,6 +15,7 @@ public class Töötuba {
         this.töötoaNimi = töötoaNimi;
         this.töötoasOsalejad =  new ArrayList<>();
     }
+
 
     public void lisaOsaleja(Osaleja osaleja) {
         töötoasOsalejad.add(osaleja);
@@ -31,10 +32,7 @@ public class Töötuba {
 
     @Override
     public String toString() {
-        return "Töötuba{" +
-                "töötoaNimi='" + töötoaNimi + '\'' +
-                ", töötoasOsalejad=" + töötoasOsalejad +
-                '}';
+        return "Töötuba: "+töötoaNimi;
     }
 
     // public void kuvaEkraanile() { System.out.println(töötoasOsalejad); }
