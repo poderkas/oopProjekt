@@ -21,12 +21,13 @@ import java.util.Scanner;
 public class Peaklass extends Application {
 
     public static void main(String[] args) {
-        launch(args);
+        Peaklass.launch(args);
     }
 
     @Override
     public void start(Stage peaLava) throws FileNotFoundException {
         List<Osaleja> osalejateList = new ArrayList<>();
+        /*
         try (Scanner sc = new Scanner(new File("projekt\\src\\main\\java\\com\\oop\\projekt\\osalejad.txt"), "UTF-8")) { //loeme osalejad osalejate failist
             while (sc.hasNextLine()) {
                 String rida = sc.nextLine();
@@ -36,6 +37,7 @@ public class Peaklass extends Application {
         }catch (FileNotFoundException e){
             System.out.println("kys");
         }
+         */
         //TODO me peame midagi failist lugema
         //Sissejuhatav tekst
         /*System.out.println("Programm aitab teil hallata töötube ja/või kontoriruume.");
@@ -87,8 +89,9 @@ public class Peaklass extends Application {
             TreeItem<VihkameTreeview> uusNode = new TreeItem<>(uusTöötuba);
 
             Button editTöötuba = new Button("Edit");
+            Button deleteTöötuba = new Button("Delete");
             Button LisaOsaleja = new Button("Lisa Osaleja");
-            HBox miniHbox = new HBox(editTöötuba,LisaOsaleja);
+            HBox miniHbox = new HBox(deleteTöötuba,editTöötuba,LisaOsaleja);
 
             editTöötuba.setOnAction(g -> {
                 String kasutajaSisend = input.getText();
@@ -97,6 +100,10 @@ public class Peaklass extends Application {
                 uusNode.setValue(uusTöötuba);
                 treeView.edit(uusNode);
                 treeView.refresh();
+            });
+
+            deleteTöötuba.setOnAction(s -> {
+                uusNode.getParent().getChildren().remove(uusNode);
             });
 
             LisaOsaleja.setOnAction(f -> {
@@ -109,7 +116,10 @@ public class Peaklass extends Application {
 
 
                 Button editOsaleja = new Button("Edit");
-                uusOsalejaNode.setGraphic(editOsaleja);
+                Button deleteOsaleja = new Button("Delete");
+
+                HBox miniMiniHbox = new HBox(deleteOsaleja,editOsaleja);
+                uusOsalejaNode.setGraphic(miniMiniHbox);
                 editOsaleja.setOnAction(h -> {
                     String kasutajaSisend = input.getText();
                     uusOsaleja.setName(kasutajaSisend);
@@ -117,6 +127,10 @@ public class Peaklass extends Application {
                     uusOsalejaNode.setValue(uusOsaleja);
                     treeView.edit(uusOsalejaNode);
                     treeView.refresh();
+                });
+
+                deleteOsaleja.setOnAction(t -> {
+                    uusOsalejaNode.getParent().getChildren().remove(uusOsalejaNode);
                 });
 
             });
@@ -138,11 +152,13 @@ public class Peaklass extends Application {
         Scene scene = new Scene(juurpaigutus);
         peaLava.setScene(scene);
         peaLava.setResizable(true);
-        peaLava.setTitle("Küsimus");
+        peaLava.setTitle("Töötubade haldaja");
         peaLava.show();
+        /*
         for (Osaleja osaleja : osalejateList) {
             System.out.println(osaleja);
         }
+         */
     }
 }
 
