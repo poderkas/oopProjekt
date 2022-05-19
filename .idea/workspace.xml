@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd8d7be7-1f47-4f90-8afb-4874398b954f" name="Changes" comment="Kole aga töötab.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/VihkameTreeview.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Osaleja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Osaleja.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Peaklass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Peaklass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Töötuba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oop/projekt/Töötuba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +92,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652912637423</updated>
     </task>
+    <task id="LOCAL-00001" summary="Kole aga töötab.">
+      <created>1652962036196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652962036196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

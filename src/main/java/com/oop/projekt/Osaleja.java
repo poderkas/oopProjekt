@@ -10,11 +10,11 @@ public class Osaleja extends VihkameTreeview{
         //this.tööToad = new ArrayList<>();
     }
 
-    public String getNimi() {
+    public String getName() {
         return nimi;
     }
 
-    public void setNimi(String nimi) { this.nimi = nimi; }
+    public void setName(String nimi) { this.nimi = nimi; }
 
     //public void lisaTöötuppa (Töötuba tuba){tööToad.add(tuba);}
 

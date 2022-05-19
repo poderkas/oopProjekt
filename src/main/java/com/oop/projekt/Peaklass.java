@@ -1,10 +1,8 @@
 package com.oop.projekt;
 
 import javafx.application.Application;
-import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
@@ -19,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+//// Delete nupp on veel tegemata
 public class Peaklass extends Application {
 
     public static void main(String[] args) {
@@ -51,7 +50,7 @@ public class Peaklass extends Application {
         System.out.println();*/
 
 
-        Text tekstJuhend = new Text(50, 100, "öööööööööööööööööööööööööööööööööööööööööö");
+        Text tekstJuhend = new Text(50, 100, "Kirjutage vastav nimi lahtrisse, ning lisage töötuba või osaleja.");
 
         tekstJuhend.setFont(Font.font("null",
                 FontWeight.NORMAL, 12));
@@ -66,7 +65,7 @@ public class Peaklass extends Application {
         TextField input = new TextField();
 
         input.setMinWidth(300);
-        input.setMinHeight(10);
+        input.setMinHeight(30);
 
 
 
@@ -80,26 +79,48 @@ public class Peaklass extends Application {
         TreeView<VihkameTreeview> treeView = new TreeView<>(rootNode);
         treeView.setShowRoot(false);
         vbox.getChildren().add(treeView);
-
+        treeView.setEditable(true);
         nuppLisaTootuba.setOnAction(e -> {
             String töötoaNimi = input.getText();
             Töötuba uusTöötuba = new Töötuba(töötoaNimi);
             input.setText("");
             TreeItem<VihkameTreeview> uusNode = new TreeItem<>(uusTöötuba);
-            Button uusLisaOsaleja = new Button("Lisa Osaleja");
-            uusNode.setGraphic(uusLisaOsaleja);
-            //TODO EDIT nupp töötuba
 
-            uusLisaOsaleja.setOnAction(f -> {
+            Button editTöötuba = new Button("Edit");
+            Button LisaOsaleja = new Button("Lisa Osaleja");
+            HBox miniHbox = new HBox(editTöötuba,LisaOsaleja);
+
+            editTöötuba.setOnAction(g -> {
                 String kasutajaSisend = input.getText();
-                Osaleja uus = new Osaleja(kasutajaSisend);
-                uusTöötuba.lisaOsaleja(uus);
+                uusTöötuba.setName(kasutajaSisend);
                 input.setText("");
-                uusNode.getChildren().add(new TreeItem<>(uus));
+                uusNode.setValue(uusTöötuba);
+                treeView.edit(uusNode);
+                treeView.refresh();
+            });
 
-                //TODO EDIT nupp osaleja
+            LisaOsaleja.setOnAction(f -> {
+                String osalejaNimi = input.getText();
+                Osaleja uusOsaleja = new Osaleja(osalejaNimi);
+                uusTöötuba.lisaOsaleja(uusOsaleja);
+                input.setText("");
+                TreeItem<VihkameTreeview> uusOsalejaNode = new TreeItem<>(uusOsaleja);
+                uusNode.getChildren().add(uusOsalejaNode);
+
+
+                Button editOsaleja = new Button("Edit");
+                uusOsalejaNode.setGraphic(editOsaleja);
+                editOsaleja.setOnAction(h -> {
+                    String kasutajaSisend = input.getText();
+                    uusOsaleja.setName(kasutajaSisend);
+                    input.setText("");
+                    uusOsalejaNode.setValue(uusOsaleja);
+                    treeView.edit(uusOsalejaNode);
+                    treeView.refresh();
+                });
 
             });
+            uusNode.setGraphic(miniHbox);
             rootNode.getChildren().add(uusNode);
         });
 

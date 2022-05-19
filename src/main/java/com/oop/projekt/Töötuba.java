@@ -24,11 +24,13 @@ public class Töötuba extends VihkameTreeview{
         return töötoasOsalejad;
     }
 
-    public String getTöötoaNimi() {
-        return töötoaNimi;
+    public void setName(String töötoaNimi) {
+        this.töötoaNimi = töötoaNimi;
     }
 
-
+    public void setTöötoasOsalejad(List<Osaleja> töötoasOsalejad) {
+        this.töötoasOsalejad = töötoasOsalejad;
+    }
 
     @Override
     public String toString() {
